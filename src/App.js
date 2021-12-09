@@ -4,6 +4,7 @@ import axios from "axios";
 import { API_KEY, API_URL } from "./Constants";
 import Image from "./components/Image/Image";
 import Explanation from "./components/Explanation/Explanation";
+import Copyright from "./components/Copyright/Copyright";
 
 import "./App.css";
 
@@ -47,6 +48,7 @@ function App() {
 			</div>
 			<Image nasaURL={nasaData.url} />
 			<Explanation text={nasaData.explanation} />
+			<Copyright right={nasaData.copyright} />
 		</div>
 	);
 }
